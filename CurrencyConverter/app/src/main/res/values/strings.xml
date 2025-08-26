@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name" translatable="false">CurrencyConverter</string>
+
+    <string name="symbol_eur" translatable="false">€</string>
+    <string name="symbol_aud" translatable="false">$</string>
+    <string name="symbol_bgn" translatable="false">лв</string>
+    <string name="symbol_brl" translatable="false">R$</string>
+    <string name="symbol_cad" translatable="false">$</string>
+    <string name="symbol_chf" translatable="false">CHF</string>
+    <string name="symbol_cny" translatable="false">¥</string>
+    <string name="symbol_czk" translatable="false">Kč</string>
+    <string name="symbol_dkk" translatable="false">kr</string>
+    <string name="symbol_gbp" translatable="false">£</string>
+    <string name="symbol_hkd" translatable="false">HK$</string>
+    <string name="symbol_hrk" translatable="false">kn</string>
+    <string name="symbol_huf" translatable="false">Ft</string>
+    <string name="symbol_idr" translatable="false">Rp</string>
+    <string name="symbol_ils" translatable="false">₪</string>
+    <string name="symbol_inr" translatable="false">₹</string>
+    <string name="symbol_isk" translatable="false">kr</string>
+    <string name="symbol_jpy" translatable="false">¥</string>
+    <string name="symbol_krw" translatable="false">₩</string>
+    <string name="symbol_mxn" translatable="false">$</string>
+    <string name="symbol_myr" translatable="false">RM</string>
+    <string name="symbol_nok" translatable="false">kr</string>
+    <string name="symbol_nzd" translatable="false">$</string>
+    <string name="symbol_php" translatable="false">₱</string>
+    <string name="symbol_pln" translatable="false">zł</string>
+    <string name="symbol_ron" translatable="false">lei</string>
+    <string name="symbol_rub" translatable="false">₽</string>
+    <string name="symbol_sek" translatable="false">kr</string>
+    <string name="symbol_sgd" translatable="false">$</string>
+    <string name="symbol_thb" translatable="false">฿</string>
+    <string name="symbol_try" translatable="false">₺</string>
+    <string name="symbol_usd" translatable="false">$</string>
+    <string name="symbol_zar" translatable="false">R</string>
+
+    <string name="code_eur" translatable="false">EUR</string>
+    <string name="code_aud" translatable="false">AUD</string>
+    <string name="code_bgn" translatable="false">BGN</string>
+    <string name="code_brl" translatable="false">BRL</string>
+    <string name="code_cad" translatable="false">CAD</string>
+    <string name="code_chf" translatable="false">CHF</string>
+    <string name="code_cny" translatable="false">CNY</string>
+    <string name="code_czk" translatable="false">CZK</string>
+    <string name="code_dkk" translatable="false">DKK</string>
+    <string name="code_gbp" translatable="false">GBP</string>
+    <string name="code_hkd" translatable="false">HKD</string>
+    <string name="code_hrk" translatable="false">HRK</string>
+    <string name="code_huf" translatable="false">HUF</string>
+    <string name="code_idr" translatable="false">IDR</string>
+    <string name="code_ils" translatable="false">ILS</string>
+    <string name="code_inr" translatable="false">INR</string>
+    <string name="code_isk" translatable="false">ISK</string>
+    <string name="code_jpy" translatable="false">JPY</string>
+    <string name="code_krw" translatable="false">KRW</string>
+    <string name="code_mxn" translatable="false">MXN</string>
+    <string name="code_myr" translatable="false">MYR</string>
+    <string name="code_nok" translatable="false">NOK</string>
+    <string name="code_nzd" translatable="false">NZD</string>
+    <string name="code_php" translatable="false">PHP</string>
+    <string name="code_pln" translatable="false">PLN</string>
+    <string name="code_ron" translatable="false">RON</string>
+    <string name="code_rub" translatable="false">RUB</string>
+    <string name="code_sek" translatable="false">SEK</string>
+    <string name="code_sgd" translatable="false">SGD</string>
+    <string name="code_thb" translatable="false">THB</string>
+    <string name="code_try" translatable="false">TRY</string>
+    <string name="code_usd" translatable="false">USD</string>
+    <string name="code_zar" translatable="false">ZAR</string>
+
+    <string name="currency_eur">Euro</string>
+    <string name="currency_aud">Australia Dollar</string>
+    <string name="currency_bgn">Bulgaria Lev</string>
+    <string name="currency_brl">Brazil Real</string>
+    <string name="currency_cad">Canada Dollar</string>
+    <string name="currency_chf">Switzerland Franc</string>
+    <string name="currency_cny">China Yuan/Renminbi</string>
+    <string name="currency_czk">Czech Koruna</string>
+    <string name="currency_dkk">Denmark Krone</string>
+    <string name="currency_gbp">Great Britain Pound</string>
+    <string name="currency_hkd">Hong Kong Dollar</string>
+    <string name="currency_hrk">Croatia Kuna</string>
+    <string name="currency_huf">Hungary Forint</string>
+    <string name="currency_idr">Indonesia Rupiah</string>
+    <string name="currency_ils">Israel New Shekel</string>
+    <string name="currency_inr">India Rupee</string>
+    <string name="currency_isk">Iceland Krona</string>
+    <string name="currency_jpy">Japan Yen</string>
+    <string name="currency_krw">South Korea Won	</string>
+    <string name="currency_mxn">Mexico Peso</string>
+    <string name="currency_myr">Malaysia Ringgit</string>
+    <string name="currency_nok">Norway Kroner</string>
+    <string name="currency_nzd">New Zealand Dollar</string>
+    <string name="currency_php">Philippines Peso</string>
+    <string name="currency_pln">Poland Zloty</string>
+    <string name="currency_ron">Romania New Lei</string>
+    <string name="currency_rub">Russia Rouble</string>
+    <string name="currency_sek">Sweden Krona</string>
+    <string name="currency_sgd">Singapore Dollar</string>
+    <string name="currency_thb">Thailand Baht</string>
+    <string name="currency_try">Turkish Lira</string>
+    <string name="currency_usd">USA Dollar</string>
+    <string name="currency_zar">South Africa Rand</string>
+
+    <string name="flag_url_gb" translatable="false">https://flagcdn.com/w80/gb.png</string>
+    <string name="flag_url_ru" translatable="false">https://flagcdn.com/w80/ru.png</string>
+    <string name="flag_url_us" translatable="false">https://flagcdn.com/w80/us.png</string>
+    <string name="flag_url_cn" translatable="false">https://flagcdn.com/w80/cn.png</string>
+    <string name="flag_url_jp" translatable="false">https://flagcdn.com/w80/jp.png</string>
+    <string name="flag_url_ca" translatable="false">https://flagcdn.com/w80/ca.png</string>
+    <string name="flag_url_au" translatable="false">https://flagcdn.com/w80/au.png</string>
+    <string name="flag_url_br" translatable="false">https://flagcdn.com/w80/br.png</string>
+    <string name="flag_url_kr" translatable="false">https://flagcdn.com/w80/kr.png</string>
+    <string name="flag_url_mx" translatable="false">https://flagcdn.com/w80/mx.png</string>
+    <string name="flag_url_ch" translatable="false">https://flagcdn.com/w80/ch.png</string>
+    <string name="flag_url_tr" translatable="false">https://flagcdn.com/w80/tr.png</string>
+    <string name="flag_url_bg" translatable="false">https://flagcdn.com/w80/bg.png</string>
+    <string name="flag_url_cz" translatable="false">https://flagcdn.com/w80/cz.png</string>
+    <string name="flag_url_dk" translatable="false">https://flagcdn.com/w80/dk.png</string>
+    <string name="flag_url_hk" translatable="false">https://flagcdn.com/w80/hk.png</string>
+    <string name="flag_url_hu" translatable="false">https://flagcdn.com/w80/hu.png</string>
+    <string name="flag_url_id" translatable="false">https://flagcdn.com/w80/id.png</string>
+    <string name="flag_url_il" translatable="false">https://flagcdn.com/w80/il.png</string>
+    <string name="flag_url_is" translatable="false">https://flagcdn.com/w80/is.png</string>
+    <string name="flag_url_in" translatable="false">https://flagcdn.com/w80/in.png</string>
+    <string name="flag_url_my" translatable="false">https://flagcdn.com/w80/my.png</string>
+    <string name="flag_url_no" translatable="false">https://flagcdn.com/w80/no.png</string>
+    <string name="flag_url_nz" translatable="false">https://flagcdn.com/w80/nz.png</string>
+    <string name="flag_url_ph" translatable="false">https://flagcdn.com/w80/ph.png</string>
+    <string name="flag_url_pl" translatable="false">https://flagcdn.com/w80/pl.png</string>
+    <string name="flag_url_ro" translatable="false">https://flagcdn.com/w80/ro.png</string>
+    <string name="flag_url_se" translatable="false">https://flagcdn.com/w80/se.png</string>
+    <string name="flag_url_sg" translatable="false">https://flagcdn.com/w80/sg.png</string>
+    <string name="flag_url_th" translatable="false">https://flagcdn.com/w80/th.png</string>
+    <string name="flag_url_za" translatable="false">https://flagcdn.com/w80/za.png</string>
+    <string name="flag_url_hr" translatable="false">https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f73f4490-0031-4197-a498-7dcae472a614/djvbw6h-d6cee0c1-673a-4864-8d39-b5b58a3c1eca.jpg/v1/fill/w_828,h_414,q_75,strp/flag_of_croatia_by_brobromelon_djvbw6h-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDE0IiwicGF0aCI6IlwvZlwvZjczZjQ0OTAtMDAzMS00MTk3LWE0OTgtN2RjYWU0NzJhNjE0XC9kanZidzZoLWQ2Y2VlMGMxLTY3M2EtNDg2NC04ZDM5LWI1YjU4YTNjMWVjYS5qcGciLCJ3aWR0aCI6Ijw9ODI4In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.s5nzHZUTvkngxSDAX2LYwrPmbnCrNtaUkVQsOXVK2Ps</string>
+    <string name="flag_url_eu" translatable="false">https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Proposed_15-star_flag_of_Europe_%281953%29.png/500px-Proposed_15-star_flag_of_Europe_%281953%29.png</string>
+
+
+
+    <string name="balance_format">Balance:</string>
+
+    <string name="transaction_to">to</string>
+    <string name="transaction_buy">Buy</string>
+    <string name="transaction_for">for</string>
+    <string name="currency">Currencies</string>
+    <string name="transaction_list">List of transactions</string>
+    <string name="transaction_history">Transaction history</string>
+    <string name="sell">Sell</string>
+    <string name="buy">Buy</string>
+    <string name="transaction_status">There are no completed transactions</string>
+</resources>
