@@ -1,0 +1,382 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "ef395f47461292180de06030a4dc600b",
+    "entities": [
+      {
+        "tableName": "section",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idSection` INTEGER PRIMARY KEY AUTOINCREMENT, `nameSection` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "idSection",
+            "columnName": "idSection",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nameSection",
+            "columnName": "nameSection",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "idSection"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "theory",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idTheory` INTEGER PRIMARY KEY AUTOINCREMENT, `nameTheory` TEXT NOT NULL, `textTheory` TEXT NOT NULL, `idPhysicModel` INTEGER, `idSection` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "idTheory",
+            "columnName": "idTheory",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nameTheory",
+            "columnName": "nameTheory",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "textTheory",
+            "columnName": "textTheory",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idPhysicModel",
+            "columnName": "idPhysicModel",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idSection",
+            "columnName": "idSection",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "idTheory"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "physic_model",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idPhysicModel` INTEGER PRIMARY KEY AUTOINCREMENT, `namePhysicModel` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "idPhysicModel",
+            "columnName": "idPhysicModel",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "namePhysicModel",
+            "columnName": "namePhysicModel",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "idPhysicModel"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "achievement",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idAchievement` INTEGER PRIMARY KEY AUTOINCREMENT, `idSection` INTEGER, `nameAchievement` TEXT NOT NULL, `status` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "idAchievement",
+            "columnName": "idAchievement",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idSection",
+            "columnName": "idSection",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nameAchievement",
+            "columnName": "nameAchievement",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "idAchievement"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "task",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idTask` INTEGER PRIMARY KEY AUTOINCREMENT, `idSection` INTEGER, `textTask` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "idTask",
+            "columnName": "idTask",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idSection",
+            "columnName": "idSection",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "textTask",
+            "columnName": "textTask",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "idTask"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "variant_answer",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idVariantAnswer` INTEGER PRIMARY KEY AUTOINCREMENT, `idTask` INTEGER, `step` INTEGER NOT NULL, `textVariantAnswer` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "idVariantAnswer",
+            "columnName": "idVariantAnswer",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idTask",
+            "columnName": "idTask",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "step",
+            "columnName": "step",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "textVariantAnswer",
+            "columnName": "textVariantAnswer",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "idVariantAnswer"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "formula",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idFormula` INTEGER PRIMARY KEY AUTOINCREMENT, `idSection` INTEGER, `formula` TEXT NOT NULL, `idNamePhysicParameter` INTEGER, FOREIGN KEY(`idNamePhysicParameter`) REFERENCES `name_physic_parameter`(`idNamePhysicParameter`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "idFormula",
+            "columnName": "idFormula",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idSection",
+            "columnName": "idSection",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "formula",
+            "columnName": "formula",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idNamePhysicParameter",
+            "columnName": "idNamePhysicParameter",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "idFormula"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "name_physic_parameter",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "idNamePhysicParameter"
+            ],
+            "referencedColumns": [
+              "idNamePhysicParameter"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "name_physic_parameter",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idNamePhysicParameter` INTEGER PRIMARY KEY AUTOINCREMENT, `namePhysicParameter` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "idNamePhysicParameter",
+            "columnName": "idNamePhysicParameter",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "namePhysicParameter",
+            "columnName": "namePhysicParameter",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "idNamePhysicParameter"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "letter_physic_parameter",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idLetterPhysicParameter` INTEGER PRIMARY KEY AUTOINCREMENT, `idSection` INTEGER, `letter` INTEGER NOT NULL, `idNamePhysicParameter` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "idLetterPhysicParameter",
+            "columnName": "idLetterPhysicParameter",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idSection",
+            "columnName": "idSection",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "letter",
+            "columnName": "letter",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idNamePhysicParameter",
+            "columnName": "idNamePhysicParameter",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "idLetterPhysicParameter"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "unit_measure",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idUnitMeasure` INTEGER PRIMARY KEY AUTOINCREMENT, `idSection` INTEGER, `unitMeasure` TEXT NOT NULL, `idNamePhysicParameter` INTEGER, FOREIGN KEY(`idNamePhysicParameter`) REFERENCES `name_physic_parameter`(`idNamePhysicParameter`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "idUnitMeasure",
+            "columnName": "idUnitMeasure",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idSection",
+            "columnName": "idSection",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unitMeasure",
+            "columnName": "unitMeasure",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idNamePhysicParameter",
+            "columnName": "idNamePhysicParameter",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "idUnitMeasure"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "name_physic_parameter",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "idNamePhysicParameter"
+            ],
+            "referencedColumns": [
+              "idNamePhysicParameter"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ef395f47461292180de06030a4dc600b')"
+    ]
+  }
+}
